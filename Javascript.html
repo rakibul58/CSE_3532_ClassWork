@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> JavaScript</title>
+    </head>
+    <script>
+        function addition()
+        {
+            var firstnumber = document.getElementById('firstnumber').value;
+            var secondnumber = document.getElementById('secondnumber').value;
+            var addition = Number(firstnumber) + Number(secondnumber);
+            //alert('Sum = ' + addition);
+            document.getElementById('third').value = addition;
+ 
+ 
+        }
+        function subtraction()
+        {
+            var firstnumber = document.getElementById('firstnumber').value;
+            var secondnumber = document.getElementById('secondnumber').value;
+            var addition = Number(firstnumber) - Number(secondnumber);
+            //alert('Sum = ' + addition);
+            document.getElementById('sub').value = addition;
+ 
+ 
+        }
+        function division()
+        {
+            var firstnumber = document.getElementById('firstnumber').value;
+            var secondnumber = document.getElementById('secondnumber').value;
+            var addition = Number(firstnumber) / Number(secondnumber);
+            //alert('Sum = ' + addition);
+            document.getElementById('divide').value = addition;
+ 
+ 
+        }
+        function multiplication()
+        {
+            var firstnumber = document.getElementById('firstnumber').value;
+            var secondnumber = document.getElementById('secondnumber').value;
+            var addition = Number(firstnumber) * Number(secondnumber);
+            //alert('Sum = ' + addition);
+            document.getElementById('mul').value = addition;
+ 
+ 
+        }
+        function fullname()
+        {
+            let firstnumber = document.getElementById('first').value;
+            let secondnumber = document.getElementById('last').value;
+            let addition = firstnumber + " " + secondnumber;
+            document.getElementById('full').value = addition;
+        }
+    </script>
+    <style>
+        table, tr, td {
+        border: 1px solid;
+    }
+    </style>
+    <body>
+        <table align="center">
+            <tr>
+                <td align="center">First Name</td>
+                <td><input onchange="fullname()" id="first" type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">Last Name</td>
+                <td><input onchange="fullname()" id="last" type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">Full Name</td>
+                <td><input id="full" type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">firstnumber</td>
+                <td><input onchange="addition() , subtraction() , division() , multiplication()" type="text" id="firstnumber" name="firstnumber"></td>
+            </tr>
+            <tr>
+                <td align="center">secondnumber</td>
+                <td><input onchange="addition() , subtraction() , division() , multiplication()" type="text" id="secondnumber" name="secondnumber"></td>
+            </tr>
+            <tr>
+                <td align="center">Sumation</td>
+                <td><input id="third" type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">Subtraction</td>
+                <td><input id="sub" type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">Division</td>
+                <td><input id="divide" type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">Multiplication</td>
+                <td ><input id="mul" type="text"></td>
+            </tr>
+        </table>
+    </body>
+</html>
